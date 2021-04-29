@@ -1,0 +1,46 @@
+<header class="header" role="banner" >
+	<input id="toggle" name="toggle" type="checkbox" />
+	<label for="toggle">
+		<i class="mdi mdi-chevron-right"></i>
+	</label>
+	<script>
+		const toggle = document.getElementById("toggle");
+		if (window.innerHeight < window.innerWidth) {
+			toggle.checked = true;
+		}
+	</script>
+	<div class="spacer"></div>
+	<div class="nav-wrapper">
+		<nav class="nav">
+			<ul class="link-list" >
+				{%- assign root_domain = "https://ozymandias.tk/" -%}
+				<li><a href="{{ root_domain }}about/" data-tooltip="About Me" ><i class="mdi mdi-account"></i></a></li>
+				<li><a href="{{ "/" | relative_url }}" data-tooltip="Tech Corner" ><i class="mdi mdi-post-outline"></i></a></li>
+				<li><a href="{{ root_domain }}apps/" data-tooltip="Applications" ><i class="mdi mdi-apps"></i></a></li>
+				<li><a href="{{ root_domain }}libs/" data-tooltip="Libraries" ><i class="mdi mdi-library"></i></a></li>
+				<li><a href="https://kitchen.ozymandias.tk/" data-tooltip="Kitchen Escapades" ><i class="mdi mdi-chef-hat"></i></a></li>
+				<li><a href="{{ root_domain }}hobbies/" data-tooltip="My Hobbies" ><i class="mdi mdi-coffee"></i></a></li>
+				<li><a href="{{ root_domain }}donate/" data-tooltip="Show some love!" ><i class="mdi mdi-heart donate"></i></a></li>
+			</ul>
+		</nav>
+		<h1 class="title" ><a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a></h1>
+		<h3 class="desc" >{{ site.description | escape }}</h3>
+		<div class="avatar-wrapper" >
+			<img id="avatar" class="avatar" alt="{{ site.owner }}" >
+		</div>
+		<script>
+			const avatar = document.getElementById("avatar");
+			const number = Math.floor(Math.random() * 9 + 1);
+			avatar.src = `https://ozymandias.tk/assets/profile/${number}.jpg`;
+		</script>
+		<fieldset class="contact" >
+			<legend>Contact me!</legend>
+			<ul class="link-list" >
+				<li><a href="https://github.com/{{ site.github_username }}" data-tooltip="GitHub" ><i class="mdi mdi-github"></i></a></li>
+				<li><a href="mailto:{{ site.email }}" data-tooltip="Email" ><i class="mdi mdi-gmail"></i></a></li>
+				<li><a href="https://wa.me/{{ site.whatsapp_number }}" data-tooltip="WhatsApp" ><i class="mdi mdi-whatsapp"></i></a></li>
+				<li><a href="https://www.messenger.com/t/{{ site.facebook_username }}" data-tooltip="Facebook Messenger" ><i class="mdi mdi-facebook"></i></a></li>
+			</ul>
+		</fieldset>
+	</div>
+</header>

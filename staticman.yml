@@ -1,0 +1,16 @@
+tech:
+  allowedFields: ["name", "email", "url", "message", "reply"]
+  allowedOrigins: ["localhost", "tech.ozymandias.tk"]
+  branch: "gh_pages"
+  commitMessage: "New Staticman comment on tech.ozymandias.tk"
+  filename: "entry{@timestamp}"
+  format: "yaml"
+  generatedFields:
+    date:
+      type: date
+  moderation: true
+  name: "tech.ozymandias.tk"
+  path: "_data/comments/{options.slug}"
+  requiredFields: ["name", "email", "message"]
+  transforms:
+    email: "md5"

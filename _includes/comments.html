@@ -1,0 +1,18 @@
+<section class="comments">
+	<div class="new-wrapper">
+		<input type="checkbox" name="new-comment" class="new-comment" >
+		<label  class="new-comment-label" for="new-comment" >New comment (Markdown supported)</label>
+		<div class="new-comment-spacer"></div>
+		{%- include reply-form.html cid="" -%}
+		<div class="comment-list">
+			{%- if site.data.comments[page.slug].size > 0 -%}
+				{%- assign comments = site.data.comments[page.slug] | where: "reply", blank -%}
+				{%- assign sorted = comments | sort: "date" -%}
+				{%- for data in sorted -%}
+					{%- assign comment=data[1] -%}
+					{%- include comment.html data=comment -%}
+				{%- endfor -%}
+			{%- endif -%}
+		</div>
+	</div>
+</section>

@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<div class="card-wrapper" >
+
+	<ul class="cards" >
+	{%- for post in paginator.posts -%}
+		<li class="card" >
+			<h2>
+				<a class="link" href="{{ post.url | relative_url }}">
+					{{ post.title | escape }}
+				</a>
+			</h2>
+			<span class="meta">{{ post.date | date: "%Y %B %d" }}</span>
+			<p class="excerpt">{{ post.excerpt }}</p>
+		</li>
+	{%- endfor -%}
+	</ul>
+
+	<nav class="paginator" >
+		<span><a href="{{ paginator.previous_page_path }}"><i class="mdi mdi-chevron-left"></i></a></span>
+		<span class="indicator">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+		<span><a href="{{ paginator.next_page_path }}"><i class="mdi mdi-chevron-right"></i></a></span>
+	</nav>
+
+	<p class="rss"><a href="{{ "/feed.xml" | relative_url }}"><i class="mdi mdi-rss" ></i>RSS</a></p>
+
+</div>

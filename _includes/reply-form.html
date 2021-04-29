@@ -1,0 +1,16 @@
+<div id="new-form" class="new-form">
+	<form action="https://comments-ozymandias-tk.herokuapp.com/v3/entry/github/OzymandiasTheGreat/tech.ozymandias.tk/gh_pages/tech" method="post">
+		<input name="options[redirect]" type="hidden" value="{{ site.url }}{{ page.url }}">
+		<input name="options[slug]" type="hidden" value="{{ page.slug }}">
+		<input name="fields[reply]" type="hidden" value="{{ cid }}">
+		<label for="fields[name]">Display name*</label>
+		<input required type="text" name="fields[name]" >
+		<label for="fields[email]">Email (hidden)*</label>
+		<input required type="email" name="fields[email]" >
+		<label for="fields[url]">Website</label>
+		<input type="url" name="fields[url]" >
+		<label for="fields[message]">Comment*</label>
+		<textarea required name="fields[message]" rows="7" ></textarea>
+		<button type="submit">Post</button>
+	</form>
+</div>
