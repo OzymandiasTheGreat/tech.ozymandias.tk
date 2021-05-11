@@ -1,0 +1,23 @@
+{
+	"grammarly.overrides": [
+		{
+			"files": [
+				"**/_posts/2021-05-11-nativescript-databases-you.md"
+			],
+			"config": {
+				"audience": "knowledgeable",
+				"dialect": "american",
+				"domain": "technical",
+				"emotions": [
+					"neutral",
+					"confident",
+					"optimistic"
+				],
+				"goals": [
+					"inform",
+					"describe"
+				]
+			}
+		}
+	]
+}
