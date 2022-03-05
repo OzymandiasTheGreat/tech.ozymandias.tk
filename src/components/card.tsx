@@ -18,16 +18,16 @@ const Card: React.FC<{ post: Post }> = ({ post }) => {
 	const { width } = useWindowDimensions();
 	const [vertical, setVertical] = useState(true);
 
-	useEffect(() => setVertical(width < 800), [width]);
+	useEffect(() => setVertical(width < 900), [width]);
 
 	return (
-		<Link passHref href={{ pathname: `/${post.slug}` }}>
+		<Link passHref href={{ pathname: `/posts/${post.slug}` }}>
 			<A
 				style={{
 					alignSelf: "center",
 					width: vertical ? "98%" : "80%",
 					maxWidth: 1000,
-					height: vertical ? "80vh" : "65vw",
+					height: vertical ? "80vh" : 500,
 					borderRadius: 3,
 					marginVertical: "5vw",
 				}}>
