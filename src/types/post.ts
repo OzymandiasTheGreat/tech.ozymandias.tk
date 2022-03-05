@@ -16,6 +16,7 @@ export interface Post {
 			link: string;
 		};
 	};
+	source?: string;
 	medium?: string;
 	devto?: string;
 	excerpt?: Root;
