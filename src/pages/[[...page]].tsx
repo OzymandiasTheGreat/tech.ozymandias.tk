@@ -11,6 +11,7 @@ import React, { useState } from "react";
 import { Image, SafeAreaView, ScrollView } from "react-native";
 import { Main } from "@expo/html-elements";
 import Header from "../components/header";
+import Footer from "../components/footer";
 import Card from "../components/card";
 
 const App: React.FC<{ posts: Post[]; page: number; total: number }> = ({
@@ -40,6 +41,7 @@ const App: React.FC<{ posts: Post[]; page: number; total: number }> = ({
 						<Card key={i} post={post} />
 					))}
 				</Main>
+				<Footer page={page} total={total} />
 			</ScrollView>
 		</SafeAreaView>
 	);
