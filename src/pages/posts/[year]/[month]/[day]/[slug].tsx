@@ -280,6 +280,50 @@ const PostRenderer: React.FC<{ post: Post }> = ({ post }) => {
 						</P>
 					</View>
 				</Main>
+				{!comments && (
+					<View
+						style={{
+							width: 300,
+							alignSelf: "center",
+							backgroundColor: COLOR_GREEN,
+							paddingVertical: 10,
+							borderRadius: 3,
+							margin: 30,
+						}}>
+						<Text
+							style={[
+								STYLE_HEADING,
+								{
+									color: COLOR_TEXT_BG,
+									marginHorizontal: "auto",
+								},
+							]}
+							onPress={loadComments}>
+							Load Comments
+						</Text>
+					</View>
+				)}
+				{comments && (
+					<View
+						style={{
+							alignSelf: "center",
+							width: small ? "98%" : "80%",
+							maxWidth: 800,
+							minHeight: 270,
+							margin: 30,
+						}}>
+						<script
+							src="https://utteranc.es/client.js"
+							// @ts-ignore
+							repo="OzymandiasTheGreat/tech.tomasrav.me"
+							issue-term="pathname"
+							label="comment"
+							theme="github-dark"
+							crossOrigin="anonymous"
+							async
+						/>
+					</View>
+				)}
 				<Footer />
 			</ScrollView>
 		</SafeAreaView>
