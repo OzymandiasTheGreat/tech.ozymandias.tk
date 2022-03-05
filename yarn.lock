@@ -1435,6 +1435,16 @@
   resolved "https://registry.yarnpkg.com/@jsamr/react-native-li/-/react-native-li-2.3.1.tgz#12a5b5f6e3971cec77b96bee58104eed0ae9314a"
   integrity sha512-Qbo4NEj48SQ4k8FZJHFE2fgZDKTWaUGmVxcIQh3msg5JezLdTMMHuRRDYctfdHI6L0FZGObmEv3haWbIvmol8w==
 
+"@mdi/js@^6.5.95":
+  version "6.5.95"
+  resolved "https://registry.yarnpkg.com/@mdi/js/-/js-6.5.95.tgz#2d895b013408f213252b77c30e0fdaaba6dc8b4b"
+  integrity sha512-x/bwEoAGP+Mo10Dfk5audNIPi7Yz8ZBrILcbXLW3ShOI/njpgodzpgpC2WYK3D2ZSC392peRRemIFb/JsyzzYQ==
+
+"@mdi/react@^1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@mdi/react/-/react-1.5.0.tgz#461d2064ba12d509723bffc95e2f7169a6ac884a"
+  integrity sha512-NztRgUxSYD+ImaKN94Tg66VVVqXj4SmlDGzZoz48H9riJ+Awha56sfXH2fegw819NWo7KI3oeS1Es0lNQqwr0w==
+
 "@native-html/css-processor@1.11.0":
   version "1.11.0"
   resolved "https://registry.yarnpkg.com/@native-html/css-processor/-/css-processor-1.11.0.tgz#27d02e5123b0849f4986d44060ba3f235a15f552"
@@ -1561,10 +1571,10 @@
     mkdirp "^1.0.4"
     rimraf "^3.0.2"
 
-"@ozymandiasthegreat/react-native-markdown@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@ozymandiasthegreat/react-native-markdown/-/react-native-markdown-0.1.1.tgz#1986a7a9e8aa86e15b638c2757a518763b519617"
-  integrity sha512-TjUXUw1EIB/rKJ/8f4YRuxd26jL61AZgWRvDd1gQwrFdlEiRC7yE23vvLNbyfDQpHQTiyWP6seyfA/BaFkb3qg==
+"@ozymandiasthegreat/react-native-markdown@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@ozymandiasthegreat/react-native-markdown/-/react-native-markdown-0.1.2.tgz#93e15013aabbbfe1d727f186a840c2f09db9bb74"
+  integrity sha512-rA2REhJEHVkV5F/Rty8kef3nE5AUM231CzssbeLYlkyvaBMze1ofMjqZcVo15/FkQOV8ZWfi+Lp4ng2IBXGEbw==
   dependencies:
     "@expo/html-elements" "^0.1.0"
     "@jsamr/counter-style" "^2.0.2"
@@ -1879,10 +1889,33 @@
   dependencies:
     ts-toolbelt "^6.15.1"
 
+"@types/react-native-calendar-picker@^7.0.2":
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/@types/react-native-calendar-picker/-/react-native-calendar-picker-7.0.2.tgz#5bda6245bfa18416699ebde61c2bde77b37c039e"
+  integrity sha512-vM97SJXE0sgNEMKV6uH7KfkbuJRe1v/0EuyHjqRHe2WVhKDG/3qYklAtO1aQTs29wYzpA2hN+0ZvMIOOQsUi/w==
+  dependencies:
+    "@types/react" "*"
+    "@types/react-native" "*"
+    moment ">=2.0.0"
+
+"@types/react-native@*":
+  version "0.67.1"
+  resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.67.1.tgz#b11dad862c850e2556caaf252ad87cff12502f0b"
+  integrity sha512-uUlyohC91eQN0FWYq1pyYFSbwbnIDFjYSoc3ILieRfnH1epvSDXcSklfCVYjDizoD3ByWu2h5Yk6HbcbRJ4oGw==
+  dependencies:
+    "@types/react" "*"
+
 "@types/react-native@~0.64.12":
   version "0.64.23"
   resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.64.23.tgz#5a0cd846efcfc7c6ad28550172d1041df7b5d7b0"
   integrity sha512-glxMEAmG1PKeTA6ZvPb81oYg4Q+sgCsCJKnkeoGSqBIR2z38XispNb1+Sar+0I7E4dJXg+NC9pZhWl9HnxOG1A==
+  dependencies:
+    "@types/react" "*"
+
+"@types/react-no-ssr@^1.1.3":
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/@types/react-no-ssr/-/react-no-ssr-1.1.3.tgz#895baced8f49e270289c8ad11be1a4a50328d243"
+  integrity sha512-uMR17qGISe0qTTiVFuRfatP+9plEe/Q0beQ47xy0OXatwb3Z2bEj3OW7FC+9PVqCYEsfR4b01LU9tXw2urzBzw==
   dependencies:
     "@types/react" "*"
 
@@ -2636,7 +2669,7 @@ babel-preset-fbjs@^3.3.0:
     "@babel/plugin-transform-template-literals" "^7.0.0"
     babel-plugin-syntax-trailing-function-commas "^7.0.0-beta.0"
 
-babel-runtime@^6.18.0:
+babel-runtime@6.x.x, babel-runtime@^6.18.0:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.26.0.tgz#965c7058668e82b55d7bfe04ff2337bc8b5647fe"
   integrity sha1-llxwWGaOgrVde/4E/yM3vItWR/4=
@@ -4742,7 +4775,7 @@ fbjs-css-vars@^1.0.0:
   resolved "https://registry.yarnpkg.com/fbjs-css-vars/-/fbjs-css-vars-1.0.2.tgz#216551136ae02fe255932c3ec8775f18e2c078b8"
   integrity sha512-b2XGFAFdWZWg0phtAWLHCk836A1Xann+I+Dgd3Gk64MHKZO44FfoD1KxyvbSh0qZsIoXQGGlVztIY+oitJPpRQ==
 
-fbjs@^0.8.4:
+fbjs@^0.8.4, fbjs@^0.8.9:
   version "0.8.18"
   resolved "https://registry.yarnpkg.com/fbjs/-/fbjs-0.8.18.tgz#9835e0addb9aca2eff53295cd79ca1cfc7c9662a"
   integrity sha512-EQaWFK+fEPSoibjNy8IxUtaFOMXcWsY0JaVrQoZR9zC8N2Ygf9iDITPWjUTVIax95b6I742JFLqASHfsag/vKA==
@@ -6394,7 +6427,7 @@ lodash._reinterpolate@^3.0.0:
   resolved "https://registry.yarnpkg.com/lodash._reinterpolate/-/lodash._reinterpolate-3.0.0.tgz#0ccf2d89166af03b3663c796538b75ac6e114d9d"
   integrity sha1-DM8tiRZq8Ds2Y8eWU4t1rG4RTZ0=
 
-lodash.debounce@^4.0.8:
+lodash.debounce@4.0.8, lodash.debounce@^4.0.8:
   version "4.0.8"
   resolved "https://registry.yarnpkg.com/lodash.debounce/-/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
   integrity sha1-gteb/zCmfEAF/9XiUVMArZyk168=
@@ -7429,6 +7462,18 @@ module-alias@^2.0.0:
   resolved "https://registry.yarnpkg.com/module-alias/-/module-alias-2.2.2.tgz#151cdcecc24e25739ff0aa6e51e1c5716974c0e0"
   integrity sha512-A/78XjoX2EmNvppVWEhM2oGk3x4lLxnkEA4jTbaK97QKSDjkIoOsKQlfylt/d3kKKi596Qy3NP5XrXJ6fZIC9Q==
 
+moment-timezone@^0.5.34:
+  version "0.5.34"
+  resolved "https://registry.yarnpkg.com/moment-timezone/-/moment-timezone-0.5.34.tgz#a75938f7476b88f155d3504a9343f7519d9a405c"
+  integrity sha512-3zAEHh2hKUs3EXLESx/wsgw6IQdusOT8Bxm3D9UrHPQR7zlMmzwybC8zHEM1tQ4LJwP7fcxrWr8tuBg05fFCbg==
+  dependencies:
+    moment ">= 2.9.0"
+
+"moment@>= 2.9.0", moment@>=2.0.0, moment@^2.29.1:
+  version "2.29.1"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.1.tgz#b2be769fa31940be9eeea6469c075e35006fa3d3"
+  integrity sha512-kHmoybcPV8Sqy59DwNDY3Jefr64lK/by/da0ViFcuA4DH0vQg5Q6Ze5VimxkfQNSC+Mls/Kx53s7TjP1RhFEDQ==
+
 move-concurrently@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/move-concurrently/-/move-concurrently-1.0.1.tgz#be2c005fda32e0b29af1f05d7c4b33214c701f92"
@@ -7596,6 +7641,11 @@ node-fetch@^1.0.1:
   dependencies:
     encoding "^0.1.11"
     is-stream "^1.0.1"
+
+node-git-hooks@^1.0.1:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/node-git-hooks/-/node-git-hooks-1.0.6.tgz#9c7a18a8c8622c280f1e5049e3e83d32bc29d2ea"
+  integrity sha512-ZTiTpRm16kxZY3JQugqjtm1u6nRt0cF2IH8lTMbiyv1V0qUA6ao8yHBwu4p58s3Ry+DbrlXOgUR4b4o/KzjWAA==
 
 node-html-parser@^1.2.12:
   version "1.4.9"
@@ -8685,6 +8735,13 @@ prompts@^2.3.2, prompts@^2.4.0:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
+prop-types@15.5.8:
+  version "15.5.8"
+  resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.5.8.tgz#6b7b2e141083be38c8595aa51fc55775c7199394"
+  integrity sha1-a3suFBCDvjjIWVqlH8VXdccZk5Q=
+  dependencies:
+    fbjs "^0.8.9"
+
 prop-types@^15.5.7, prop-types@^15.6.0, prop-types@^15.7.2:
   version "15.8.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
@@ -8883,6 +8940,15 @@ react-is@^17.0.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.2.tgz#e691d4a8e9c789365655539ab372762b0efb54f0"
   integrity sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==
 
+react-native-calendar-picker@^7.1.2:
+  version "7.1.2"
+  resolved "https://registry.yarnpkg.com/react-native-calendar-picker/-/react-native-calendar-picker-7.1.2.tgz#b3bf1ba1cc7b1177b2fac7937564ccf09643029f"
+  integrity sha512-n5ngdqbMIUeu2iHYxvKSX5u67wWqPYdhTx9sMjjQsjF6BrStxF65JCJSPaAORxD+wbFI5AK/xKDCFJfA0o1uFQ==
+  dependencies:
+    node-git-hooks "^1.0.1"
+    prop-types "^15.6.0"
+    recyclerlistview "^3.0.0"
+
 react-native-codegen@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/react-native-codegen/-/react-native-codegen-0.0.6.tgz#b3173faa879cf71bfade8d030f9c4698388f6909"
@@ -8964,6 +9030,13 @@ react-native@0.64.3:
     use-subscription "^1.0.0"
     whatwg-fetch "^3.0.0"
     ws "^6.1.4"
+
+react-no-ssr@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/react-no-ssr/-/react-no-ssr-1.1.0.tgz#313b48d2e26020f969ed98e472f10481604e3cc8"
+  integrity sha1-MTtI0uJgIPlp7ZjkcvEEgWBOPMg=
+  dependencies:
+    babel-runtime "6.x.x"
 
 react-refresh@^0.4.0:
   version "0.4.3"
@@ -9047,6 +9120,15 @@ recursive-readdir@2.2.2:
   integrity sha512-nRCcW9Sj7NuZwa2XvH9co8NPeXUBhZP7CRKJtU+cS6PW9FpCIFoI5ib0NT1ZrbNuPoRy0ylyCaUL8Gih4LSyFg==
   dependencies:
     minimatch "3.0.4"
+
+recyclerlistview@^3.0.0:
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/recyclerlistview/-/recyclerlistview-3.0.5.tgz#50bf5bcaa401d56bb6bb264354083f4d424408eb"
+  integrity sha512-JVHz13u520faEsbVqFrJOMuJjc4mJlOXODe5QdqAJHdl5/IpyYeo83uiHrpzxyLb8QtJ0889JMlDik+Z1Ed0QQ==
+  dependencies:
+    lodash.debounce "4.0.8"
+    prop-types "15.5.8"
+    ts-object-utils "0.0.5"
 
 refractor@^2.0.0:
   version "2.10.1"
@@ -10254,6 +10336,11 @@ ts-interface-checker@^0.1.9:
   version "0.1.13"
   resolved "https://registry.yarnpkg.com/ts-interface-checker/-/ts-interface-checker-0.1.13.tgz#784fd3d679722bc103b1b4b8030bcddb5db2a699"
   integrity sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==
+
+ts-object-utils@0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/ts-object-utils/-/ts-object-utils-0.0.5.tgz#95361cdecd7e52167cfc5e634c76345e90a26077"
+  integrity sha1-lTYc3s1+UhZ8/F5jTHY0XpCiYHc=
 
 ts-pnp@^1.1.6:
   version "1.2.0"
