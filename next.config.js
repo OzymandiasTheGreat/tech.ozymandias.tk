@@ -6,31 +6,38 @@ const withPlugins = require("next-compose-plugins");
 const withPreact = require("next-plugin-preact");
 const withTM = require("next-transpile-modules");
 
-module.exports = withPlugins([
+module.exports = withPlugins(
 	[
-		withPreact,
-		{
-			webpack: (config) => {
-				config.resolve.alias = {
-					...config.resolve.alias,
-					"react-dom/unstable-native-dependencies$":
-						"preact-responder-event-plugin",
-				};
-				return config;
+		[
+			withPreact,
+			{
+				webpack: (config) => {
+					config.resolve.alias = {
+						...config.resolve.alias,
+						"react-dom/unstable-native-dependencies$":
+							"preact-responder-event-plugin",
+					};
+					return config;
+				},
 			},
-		},
+		],
+		withTM([
+			"@ozymandiasthegreat/react-native-markdown",
+			"@jsamr/react-native-li",
+			"recyclerlistview",
+			"react-native-web",
+		]),
+		[
+			withExpo,
+			{
+				projectRoot: __dirname,
+				webpack5: true,
+			},
+		],
 	],
-	withTM([
-		"@ozymandiasthegreat/react-native-markdown",
-		"@jsamr/react-native-li",
-		"recyclerlistview",
-		"react-native-web",
-	]),
-	[
-		withExpo,
-		{
-			projectRoot: __dirname,
-			webpack5: true,
+	{
+		typescript: {
+			ignoreBuildErrors: true,
 		},
-	],
-]);
+	},
+);
