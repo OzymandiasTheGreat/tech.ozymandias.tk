@@ -1,0 +1,13 @@
+{
+	"expo": {
+		"name": "tech.tomasrav.me",
+		"slug": "tech.tomasrav.me",
+		"version": "1.0.0",
+		"orientation": "portrait",
+		"icon": "./public/favicon.png",
+		"assetBundlePatterns": ["**/*"],
+		"web": {
+			"favicon": "./public/favicon.svg"
+		}
+	}
+}
