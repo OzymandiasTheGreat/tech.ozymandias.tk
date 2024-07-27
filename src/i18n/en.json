@@ -1,0 +1,19 @@
+{
+  "title": "Tomas Ravinskas' Tech Blog",
+  "welcome": "Hello and welcome to my Tech Blog! My name is Tomas Ravinskas, and here I share my interesting things I find along the way.",
+  "me": "Tomas Ravinskas",
+  "next": "Next Page",
+  "prev": "Previous Page",
+  "page": "Page",
+  "edited": "Edited on",
+  "source": "Content source",
+  "loading": "Loading...",
+  "error": "Error",
+  "err404": {
+    "title": "404 Not Found",
+    "message": "Page not found. Check the address and try again."
+  },
+  "errServer": "The server encountered an error. Error code: $1",
+  "copyright": "2024 - Tomas Ravinskas",
+  "license": "CC-BY 4.0"
+}

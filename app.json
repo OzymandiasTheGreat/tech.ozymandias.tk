@@ -1,13 +1,21 @@
 {
-	"expo": {
-		"name": "tech.tomasrav.me",
-		"slug": "tech.tomasrav.me",
-		"version": "1.0.0",
-		"orientation": "portrait",
-		"icon": "./public/favicon.png",
-		"assetBundlePatterns": ["**/*"],
-		"web": {
-			"favicon": "./public/favicon.svg"
-		}
-	}
+  "expo": {
+    "name": "tech.tomasrav.me",
+    "slug": "tech_tomasrav_me",
+    "version": "4.0.0",
+    "orientation": "landscape",
+    "userInterfaceStyle": "automatic",
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "shortName": "Tomas Ravinskas' Tech Blog"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
 }
